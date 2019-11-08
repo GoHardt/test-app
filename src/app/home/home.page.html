@@ -14,10 +14,11 @@
   (ionScrollEnd)="logScrollEnd()">
 
 
-  <ion-list>
+  <ion-list *ngFor="let daten of MensaDetails">
     <ion-list-header>
-      <ion-label><h1>Speiseplan</h1></ion-label>
+      <ion-label><h1>{{daten}}</h1></ion-label>
     </ion-list-header>
+
   </ion-list>
 
 
