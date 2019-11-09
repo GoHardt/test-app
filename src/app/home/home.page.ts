@@ -7,7 +7,7 @@ import { DataService } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage{
-  MensaDetails:Array <any> = [];
+  public MensaDetails = [];
 
   constructor(private dataService: DataService) {}
 

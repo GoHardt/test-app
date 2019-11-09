@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  constructor(public http:HttpClient) {}
+  constructor(private http:HttpClient) {}
 
   getRemoteData() {
     return this.http.get(
-      "https://digiboard.htwk-leipzig.de/digiboard/getmensatoday.php"
+      "/assets/mensa.json"
       //https://www.reddit.com/r/gifs/top/.json?limit=10&sort=hot
     );
   }
