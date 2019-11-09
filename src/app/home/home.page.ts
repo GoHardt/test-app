@@ -15,7 +15,7 @@ export class HomePage{
   ngOnInit() {
     this.dataService.getRemoteData().subscribe((data) => {
 
-      var anyData = <any>data;
+      var anyData = <any>data.Eintrag;
       this.MensaDetails = anyData;
       console.log(this.MensaDetails);
     })

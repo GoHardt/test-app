@@ -11,7 +11,7 @@ export class DataService {
 
   getRemoteData() {
     return this.http.get(
-      "/assets/mensa.json"
+      "/assets/mensa2.json"
       //https://www.reddit.com/r/gifs/top/.json?limit=10&sort=hot
     );
   }

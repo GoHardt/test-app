@@ -1,4 +1,5 @@
-[
+{
+   "Eintrag":[
       {
          "ID":"5988",
          "Name":"Schneller Teller",
@@ -132,3 +133,4 @@
          "Zusatzstoffenr":"Zusatzstoffe: 13, 19, 24, 3"
       }
    ]
+}

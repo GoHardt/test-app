@@ -16,11 +16,13 @@
 
   <ion-list >
     <ion-list-header>
-      <ion-label><h1>Speisekarte</h1></ion-label>
+      <ion-label><h1>Speisekarte: {{MensaDetails.Datum}}</h1></ion-label>
     </ion-list-header>
 
     <ion-item *ngFor="let daten of MensaDetails">
-      <h1>{{daten.Name}}</h1>
+      <h4>{{daten.Name}}</h4>
+
+
     </ion-item>
 
   </ion-list>
