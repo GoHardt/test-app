@@ -7,15 +7,15 @@ import { DataService } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage{
-  public MensaDetails = [];
+
+  public MensaDetails:Array<any>;
 
   constructor(private dataService: DataService) {}
 
-
   ngOnInit() {
-    this.dataService.getRemoteData().subscribe((data) => {
 
-      var anyData = <any>data.Eintrag;
+    this.dataService.getRemoteData().subscribe((data) => {
+      var anyData:Array<any> = <any>data.Eintrag;
       this.MensaDetails = anyData;
       console.log(this.MensaDetails);
     })

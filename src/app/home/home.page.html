@@ -1,3 +1,4 @@
+
 <ion-header>
   <ion-toolbar>
     <ion-title>
@@ -16,11 +17,27 @@
 
   <ion-list >
     <ion-list-header>
-      <ion-label><h1>Speisekarte: {{MensaDetails.Datum}}</h1></ion-label>
+      <ion-label><h1>Speisekarte</h1></ion-label>
     </ion-list-header>
 
-    <ion-item *ngFor="let daten of MensaDetails">
-      <h4>{{daten.Name}}</h4>
+    <ion-item style="display:block;" *ngFor="let daten of MensaDetails">
+      <h4>
+        {{daten.Name}}
+      </h4>
+      <h5>
+        {{daten.Essen}}
+      </h5>
+      <h5>
+        {{daten.Art}}
+      </h5>
+      <h5>
+        {{daten.Preise}}
+      </h5>
+      <h5>
+        {{daten.Zusatzstoffe}}
+      </h5>
+
+
 
 
     </ion-item>
